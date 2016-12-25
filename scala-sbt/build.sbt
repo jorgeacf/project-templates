@@ -1,5 +1,5 @@
 
-name := "Basic SBT ScalaTest Project"
+name := "Basic SBT Scala Project"
 
 version := "1.0"
 
