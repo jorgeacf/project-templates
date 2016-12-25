@@ -20,3 +20,18 @@ sbt package
 ```
 sbt assembly
 ```
+
+### Run main class/object
+```
+sbt "run-main CLASS_NAME"
+```
+
+### Run tests with coverage
+```
+sbt clean coverage test
+```
+
+### Create coverage report
+```
+sbt coverageReport
+```
