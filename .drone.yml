@@ -11,6 +11,18 @@ steps:
       event:
         - push
         - pull-request
+
+  - name: tests
+    image: hseeberger/scala-sbt:11.0.4_1.3.2_2.12.10
+    commands:
+      - sbt test
+    when:
+      branch:
+        - master
+      event:
+        - push
+        - pull-request
+
   - name: slack
     image: plugins/slack
     settings:
