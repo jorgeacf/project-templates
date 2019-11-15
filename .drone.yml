@@ -2,7 +2,7 @@ kind: pipeline
 name: example-pipeline
 steps:
   - name: compile
-    image: hseeberger/scala-sbt:11.0.4_1.3.2_2.12.10
+    image: hseeberger/scala-sbt:8u222_1.3.3_2.13.1
     commands:
       - sbt compile
     when:
@@ -13,7 +13,7 @@ steps:
         - pull-request
 
   - name: tests
-    image: hseeberger/scala-sbt:11.0.4_1.3.2_2.12.10
+    image: hseeberger/scala-sbt:8u222_1.3.3_2.13.1
     commands:
       - sbt test
     when:
