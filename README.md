@@ -1,7 +1,9 @@
 
 # Project README.md
 
-Project commands
+[![Build Status](https://cloud.drone.io/api/badges/jorgeacf/project-templates/status.svg)](https://cloud.drone.io/jorgeacf/project-templates)
+
+Project commands:
 
 ### Compile project
 ```
