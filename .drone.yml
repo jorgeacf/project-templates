@@ -2,12 +2,12 @@ kind: pipeline
 name: example-pipeline
 steps:
   - name: compile
-    image: hseeberger/scala-sbt:11.0.4_1.3.2_2.12.10
-    commands:
-      - sbt compile
-    when:
-      branch:
-        - master
-      event:
-        - push
-        - pull-request
+  image: hseeberger/scala-sbt:11.0.4_1.3.2_2.12.10
+  commands:
+  - sbt compile
+  when:
+  branch:
+  - master
+  event:
+  - push
+  - pull-request
