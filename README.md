@@ -1,6 +1,8 @@
 
 # Project README.md
 
+Project commands
+
 ### Compile project
 ```
 sbt compile
