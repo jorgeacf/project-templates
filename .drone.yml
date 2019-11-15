@@ -5,6 +5,8 @@ steps:
     image: hseeberger/scala-sbt:8u222_1.3.3_2.13.1
     commands:
       - sbt compile
+      - sbt package
+      - sbt assembly
     when:
       branch:
         - master
