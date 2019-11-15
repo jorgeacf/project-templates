@@ -15,7 +15,7 @@ steps:
   - name: tests
     image: hseeberger/scala-sbt:8u222_1.3.3_2.13.1
     commands:
-      - sbt test
+      - sbt compile test
     when:
       branch:
         - master
